@@ -4,7 +4,7 @@
     --textsize: 14px;
     --projectbackgroundcolor: rgb(219, 90, 90);
     --headerfootercolor: lightblue;
-    --contactcolor: rgb(131, 108, 108);
+    --contactcolor: rgb(147, 211, 157);
 }
 
 html {
@@ -74,34 +74,53 @@ align-self: center;
 .project-container {
     display: flex;
     flex-wrap: wrap;
+    box-sizing: content-box;
+    width:100%;
+    max-width: 1320px;
+    align-items: center;
+
 }
 .project-tile {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    margin: 10px;
-    width: 100%;
-    height: 100%;
+    margin: 20px;
+    width: 30wv;
+    height: auto;
     max-width: 400px;
+    max-height: 600px;
+    box-sizing: border-box;
+    flex-shrink: 1;
 
 }
 .project-tile-img {
 display: block;
-margin: auto auto;
+width: 100%;
+box-sizing: inherit;
+display: flex;
+align-self: flex-start;
 }
 .project-tile-text {
     text-align: center;
-
+    background-color: var(--contactcolor);
     width: 100%;
+    margin: 0;
+    height: 25px;
+    display: block;
+    padding-top: 25px;
 }
 .project-header {
     text-align: center;
     width: 100%;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
 }
 #projects {
     background-color: var(--projectbackgroundcolor);
     display: flex;
     flex-direction: column;
+    align-items: center;
+
 }
 #contact {
     display: flex;
@@ -112,6 +131,7 @@ margin: auto auto;
 #projects {
     display: flex;
     height: 200vh;
+    padding: 0 auto;
 }
 #nav-bar {
     display: flex;
@@ -136,7 +156,7 @@ margin: auto auto;
     background-color: var(--welcomebackground);
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (max-width: 1200px) {
 #projects {
     height: 300vh;
 }
