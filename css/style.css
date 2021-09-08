@@ -1,6 +1,21 @@
 /* style.css */
+:root {
+    --fontcolor: white;
+    --textsize: 14px;
+    --projectbackgroundcolor: rgb(219, 90, 90);
+    --headerfootercolor: lightblue;
+    --contactcolor: rgb(131, 108, 108);
+}
+
+html {
+    color: var(fontcolor);
+    margin: 0;
+}
+body {
+    margin: 0;
+}
 main {
-    margin-top: 200px;
+    margin-top: 50px;
 }
 .container {
     width: 100%;
@@ -21,7 +36,7 @@ align-self: center;
 
 }
 .nav-link:hover {
-    background-color: black;
+    background-color: var(--projectbackgroundcolor);
 }
 .header-bar {
     position: fixed;
@@ -30,6 +45,38 @@ align-self: center;
     height: 50px;
     background-color: var(--headerfootercolor);
 
+}
+.text-container {
+    display: flex;
+    flex-direction: column;
+}
+.content-text {
+    align-self: center;
+
+}
+.footer {
+    position: absolute;
+    left: 0px;
+    height: 80px;
+    background-color: var(--contactcolor);
+    display: flex;
+    justify-content: center;
+
+    width: 100%;
+    box-sizing: border-box;
+    border-top-style: solid;
+    border-top-width: 3px;
+    border-color: var(--headerfootercolor);
+}
+#contact {
+    display: flex;
+    height: 100vh;
+    background-color: var(--contactcolor);
+
+}
+#projects {
+    display: flex;
+    height: 200vh;
 }
 #nav-bar {
     display: flex;
@@ -42,11 +89,13 @@ align-self: center;
 
 }
 
-#nav-bar:hover {
-    background-color: var(--projectbackgroundcolor);
-}
 #welcome-section {
-    height: screen;
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    background-color: var(--welcomebackground);
 }
 /*
 @media only screen and (min-width: 1200px) {
