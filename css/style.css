@@ -1,10 +1,13 @@
 /* style.css */
 :root {
-    --fontcolor: white;
+    --fontcolor: rgb(63, 62, 62);
     --textsize: 19px;
-    --projectbackgroundcolor: rgb(219, 90, 90);
-    --headerfootercolor: lightblue;
-    --contactcolor: rgb(147, 211, 157);
+    --projectbackgroundcolor: rgb(200,227,254);
+    --headerfootercolor: rgb(255, 255, 255);
+    --contactcolor: hsl(270,97%,74.1%);
+    --welcomebackground: rgb(254,227,200);
+    --tile-text: white;
+    --tile-background: rgb(59, 59, 59);
 }
 
 html {
@@ -100,7 +103,8 @@ align-self: flex-start;
 }
 .project-tile-text {
     text-align: center;
-    background-color: var(--contactcolor);
+    background-color: var(--tile-background);
+    color: var(--tile-text);
     width: 100%;
     margin: 0;
     height: 25px;
@@ -113,10 +117,27 @@ align-self: flex-start;
     margin-top: 10vh;
     margin-bottom: 5vh;
 }
-a:link {
-    font-size: var(--textsize);
+.social-icons img {
     
+    width: 40px;
+    padding: 20px;
 }
+a:link {
+    text-decoration: none;
+    color: var(--fontcolor);
+    }
+    a:visited {
+        text-decoration: none;
+        color: var(--fontcolor);    
+        }
+        a:hover {
+            text-decoration: none;
+            color: var(--fontcolor);    
+            }
+            a:active {
+                text-decoration: none;
+                color: var(--fontcolor);    
+                }
 #projects {
     background-color: var(--projectbackgroundcolor);
     display: flex;
