@@ -1,14 +1,14 @@
 /* style.css */
 :root {
     --fontcolor: white;
-    --textsize: 14px;
+    --textsize: 19px;
     --projectbackgroundcolor: rgb(219, 90, 90);
     --headerfootercolor: lightblue;
     --contactcolor: rgb(147, 211, 157);
 }
 
 html {
-    color: var(fontcolor);
+    color: var(--fontcolor);
     margin: 0;
 }
 body {
@@ -113,6 +113,10 @@ align-self: flex-start;
     margin-top: 10vh;
     margin-bottom: 5vh;
 }
+a:link {
+    font-size: var(--textsize);
+    
+}
 #projects {
     background-color: var(--projectbackgroundcolor);
     display: flex;
@@ -174,7 +178,7 @@ align-self: flex-start;
 }
 @media (max-width: 900px) {
     #projects {
-        height: 320vw;
+        height: 340vw;
     }
     .project-tile {
         max-width: 80vw;
