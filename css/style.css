@@ -58,6 +58,7 @@ align-self: center;
 .content-text {
     align-self: center;
     justify-self: center;
+    text-align: center;
 
 }
 .footer {
